@@ -1,0 +1,109 @@
+### CI snapshot builds 4.5/11
+# 4.5.oxygen version of jbosstools-earlyaccess.properties should be edited here, so the discovery job can fetch it: http://download.jboss.org/jbosstools/oxygen/snapshots/updates/earlyaccess.properties/4.5.oxygen/jbosstools-earlyaccess.properties
+jboss.discovery.directory.url|jbosstools|4.5.1.AM1=http://download.jboss.org/jbosstools/oxygen/snapshots/updates/discovery.earlyaccess/master/jbosstools-directory.xml
+jboss.discovery.site.url|jbosstools|4.5.1.AM1=http://download.jboss.org/jbosstools/oxygen/snapshots/updates/discovery.central/master/
+jboss.discovery.earlyaccess.site.url|jbosstools|4.5.1.AM1=http://download.jboss.org/jbosstools/oxygen/snapshots/updates/discovery.earlyaccess/master/
+jboss.discovery.earlyaccess.list.url|jbosstools|4.5.1.AM1=http://download.jboss.org/jbosstools/oxygen/snapshots/updates/discovery.earlyaccess/master/jbosstools-earlyaccess.properties
+jboss.central.webpage.url|jbosstools|4.5.1.AM1=https://repository.jboss.org/nexus/service/local/artifact/maven/redirect?r=public-jboss&g=org.jboss.tools.central&a=jbosstools-central-webpage&v=2.0.0-SNAPSHOT&e=zip&mustEndWith=.zip
+jboss.discovery.site.integration-stack.url|jbosstools|4.5.1.AM1=http://download.jboss.org/jbosstools/oxygen/development/updates/integration-stack/discovery/
+jboss.discovery.earlyaccess.site.integration-stack.url|jbosstools|4.5.1.AM1=http://download.jboss.org/jbosstools/oxygen/development/updates/integration-stack/discovery/earlyaccess/
+jboss.fuse.extras.site.url|jbosstools|4.5.1.AM1=http://download.jboss.org/jbosstools/oxygen/snapshots/builds/jbosstools-fuse-extras_master/latest/all/repo/
+# 4.5.oxygen version of devstudio-earlyaccess.properties should be edited here, so the discovery job can fetch it: https://devstudio.redhat.com/11/snapshots/updates/earlyaccess.properties/4.5.oxygen/devstudio-earlyaccess.properties
+jboss.discovery.directory.url|devstudio|11.1.0.AM1=https://devstudio.redhat.com/11/snapshots/updates/discovery.earlyaccess/master/devstudio-directory.xml
+jboss.discovery.site.url|devstudio|11.1.0.AM1=https://devstudio.redhat.com/11/snapshots/updates/discovery.central/master/
+jboss.discovery.earlyaccess.site.url|devstudio|11.1.0.AM1=https://devstudio.redhat.com/11/snapshots/updates/discovery.earlyaccess/master/
+jboss.discovery.earlyaccess.list.url|devstudio|11.1.0.AM1=https://devstudio.redhat.com/11/snapshots/updates/discovery.earlyaccess/master/devstudio-earlyaccess.properties
+jboss.central.webpage.url|devstudio|11.1.0.AM1=https://repository.jboss.org/nexus/service/local/artifact/maven/redirect?r=public-jboss&g=org.jboss.tools.central&a=jbosstools-central-webpage&v=2.0.0-SNAPSHOT&e=zip&mustEndWith=.zip
+jboss.discovery.site.integration-stack.url|devstudio|11.1.0.AM1=https://devstudio.redhat.com/11/development/updates/integration-stack/discovery/
+jboss.discovery.earlyaccess.site.integration-stack.url|devstudio|11.1.0.AM1=https://devstudio.redhat.com/11/development/updates/integration-stack/discovery/earlyaccess/
+jboss.fuse.extras.site.url|devstudio|11.1.0.AM1=http://download.jboss.org/jbosstools/oxygen/snapshots/builds/jbosstools-fuse-extras_master/latest/all/repo/
+
+
+### milestone staging
+# 4.5.oxygen version of jbosstools-earlyaccess.properties should be edited here, so the discovery job can fetch it: http://download.jboss.org/jbosstools/oxygen/snapshots/updates/earlyaccess.properties/4.4.oxygen/jbosstools-earlyaccess.properties
+#jboss.discovery.directory.url|jbosstools|4.5.0.Final=http://download.jboss.org/jbosstools/oxygen/staging/updates/discovery.earlyaccess/4.5.0.Final/jbosstools-directory.xml
+#jboss.discovery.site.url|jbosstools|4.5.0.Final=http://download.jboss.org/jbosstools/oxygen/staging/updates/
+#jboss.discovery.earlyaccess.site.url|jbosstools|4.5.0.Final=http://download.jboss.org/jbosstools/oxygen/staging/updates/discovery.earlyaccess/4.5.0.Final/
+#jboss.discovery.earlyaccess.list.url|jbosstools|4.5.0.Final=http://download.jboss.org/jbosstools/oxygen/staging/updates/discovery.earlyaccess/4.5.0.Final/jbosstools-earlyaccess.properties
+#jboss.central.webpage.url|jbosstools|4.5.0.Final=https://repository.jboss.org/nexus/service/local/artifact/maven/redirect?r=public-jboss&g=org.jboss.tools.central&a=jbosstools-central-webpage&v=2.0.0-SNAPSHOT&e=zip&mustEndWith=.zip
+#jboss.discovery.site.integration-stack.url|jbosstools|4.5.0.Final=http://download.jboss.org/jbosstools/oxygen/development/updates/integration-stack/discovery/
+#jboss.discovery.earlyaccess.site.integration-stack.url|jbosstools|4.5.0.Final=http://download.jboss.org/jbosstools/oxygen/development/updates/integration-stack/discovery/earlyaccess/
+#jboss.fuse.extras.site.url|jbosstools|4.5.0.Final=http://download.jboss.org/jbosstools/oxygen/staging/updates/fuse-extras/4.5.0.Final/
+# 4.5.oxygen version of devstudio-earlyaccess.properties should be edited here, so the discovery job can fetch it: https://devstudio.redhat.com/11/snapshots/updates/earlyaccess.properties/4.4.oxygen/devstudio-earlyaccess.properties
+#jboss.discovery.directory.url|devstudio|11.0.0.GA=https://devstudio.redhat.com/11/staging/updates/discovery.earlyaccess/11.0.0.GA/devstudio-directory.xml
+#jboss.discovery.site.url|devstudio|11.0.0.GA=https://devstudio.redhat.com/11/staging/updates/
+#jboss.discovery.earlyaccess.site.url|devstudio|11.0.0.GA=https://devstudio.redhat.com/11/staging/updates/discovery.earlyaccess/11.0.0.GA/
+#jboss.discovery.earlyaccess.list.url|devstudio|11.0.0.GA=https://devstudio.redhat.com/11/staging/updates/discovery.earlyaccess/11.0.0.GA/devstudio-earlyaccess.properties
+#jboss.central.webpage.url|devstudio|11.0.0.GA=https://repository.jboss.org/nexus/service/local/artifact/maven/redirect?r=public-jboss&g=org.jboss.tools.central&a=jbosstools-central-webpage&v=2.0.0-SNAPSHOT&e=zip&mustEndWith=.zip
+#jboss.discovery.site.integration-stack.url|devstudio|11.0.0.GA=https://devstudio.redhat.com/11/development/updates/integration-stack/discovery/
+#jboss.discovery.earlyaccess.site.integration-stack.url|devstudio|11.0.0.GA=https://devstudio.redhat.com/11/development/updates/integration-stack/discovery/earlyaccess/
+#jboss.fuse.extras.site.url|devstudio|11.0.0.GA=https://devstudio.redhat.com/11/staging/updates/fuse-extras/11.0.0.GA/
+
+
+### latest milestone
+# 4.5.oxygen version of jbosstools-earlyaccess.properties should be edited here, so the discovery job can fetch it: http://download.jboss.org/jbosstools/oxygen/snapshots/updates/earlyaccess.properties/4.4.oxygen/jbosstools-earlyaccess.properties
+#jboss.discovery.directory.url|jbosstools|4.5.0.Final=http://download.jboss.org/jbosstools/oxygen/development/updates/discovery.earlyaccess/4.5.0.Final/jbosstools-directory.xml
+#jboss.discovery.site.url|jbosstools|4.5.0.Final=http://download.jboss.org/jbosstools/oxygen/development/updates/
+#jboss.discovery.earlyaccess.site.url|jbosstools|4.5.0.Final=http://download.jboss.org/jbosstools/oxygen/development/updates/discovery.earlyaccess/
+#jboss.discovery.earlyaccess.list.url|jbosstools|4.5.0.Final=http://download.jboss.org/jbosstools/oxygen/development/updates/discovery.earlyaccess/4.5.0.Final/jbosstools-earlyaccess.properties
+#jboss.central.webpage.url|jbosstools|4.5.0.Final=https://repository.jboss.org/nexus/service/local/artifact/maven/redirect?r=public-jboss&g=org.jboss.tools.central&a=jbosstools-central-webpage&v=2.0.0-SNAPSHOT&e=zip&mustEndWith=.zip
+#jboss.discovery.site.integration-stack.url|jbosstools|4.5.0.Final=http://download.jboss.org/jbosstools/oxygen/stable/updates/integration-stack/discovery/
+#jboss.discovery.earlyaccess.site.integration-stack.url|jbosstools|4.5.0.Final=http://download.jboss.org/jbosstools/oxygen/stable/updates/integration-stack/discovery/earlyaccess/
+#jboss.fuse.extras.site.url|jbosstools|4.5.0.Final=http://download.jboss.org/jbosstools/oxygen/development/updates/fuse-extras/
+## no milestone release for devstudio 10.x; stay tuned for 11.x
+
+
+### latest stable
+# 4.5.oxygen version of jbosstools-earlyaccess.properties should be edited here, so the discovery job can fetch it: http://download.jboss.org/jbosstools/oxygen/snapshots/updates/earlyaccess.properties/master/jbosstools-earlyaccess.properties
+jboss.discovery.directory.url|jbosstools|4.5=http://download.jboss.org/jbosstools/oxygen/stable/updates/discovery.earlyaccess/4.5.0.Final/jbosstools-directory.xml
+jboss.discovery.site.url|jbosstools|4.5=http://download.jboss.org/jbosstools/oxygen/stable/updates/
+jboss.discovery.earlyaccess.site.url|jbosstools|4.5=http://download.jboss.org/jbosstools/oxygen/stable/updates/discovery.earlyaccess/
+jboss.discovery.earlyaccess.list.url|jbosstools|4.5=http://download.jboss.org/jbosstools/oxygen/stable/updates/discovery.earlyaccess/4.5.0.Final/jbosstools-earlyaccess.properties
+jboss.central.webpage.url|jbosstools|4.5=https://repository.jboss.org/nexus/service/local/artifact/maven/redirect?r=public-jboss&g=org.jboss.tools.central&a=jbosstools-central-webpage&v=2.0.0-SNAPSHOT&e=zip&mustEndWith=.zip
+jboss.discovery.site.integration-stack.url|jbosstools|4.5=http://download.jboss.org/jbosstools/oxygen/stable/updates/integration-stack/discovery/
+jboss.discovery.earlyaccess.site.integration-stack.url|jbosstools|4.5=http://download.jboss.org/jbosstools/oxygen/stable/updates/integration-stack/discovery/earlyaccess/
+jboss.fuse.extras.site.url|jbosstools|4.5=http://download.jboss.org/jbosstools/oxygen/development/updates/fuse-extras/
+
+# 4.5.oxygen version of devstudio-earlyaccess.properties should be edited here, so the discovery job can fetch it: https://devstudio.redhat.com/11/snapshots/updates/earlyaccess.properties/master/devstudio-earlyaccess.properties
+jboss.discovery.directory.url|devstudio|11=https://devstudio.redhat.com/11/stable/updates/discovery.earlyaccess/11.0.0.GA/devstudio-directory.xml
+jboss.discovery.site.url|devstudio|11=https://devstudio.redhat.com/11/stable/updates/
+jboss.discovery.earlyaccess.site.url|devstudio|11=https://devstudio.redhat.com/11/stable/updates/discovery.earlyaccess/
+jboss.discovery.earlyaccess.list.url|devstudio|11=https://devstudio.redhat.com/11/stable/updates/discovery.earlyaccess/11.0.0.GA/devstudio-earlyaccess.properties
+jboss.central.webpage.url|devstudio|11=https://repository.jboss.org/nexus/service/local/artifact/maven/redirect?r=public-jboss&g=org.jboss.tools.central&a=jbosstools-central-webpage&v=2.0.0-SNAPSHOT&e=zip&mustEndWith=.zip
+jboss.discovery.site.integration-stack.url|devstudio|11=https://devstudio.redhat.com/11/development/updates/integration-stack/discovery/
+jboss.discovery.earlyaccess.site.integration-stack.url|devstudio|11=https://devstudio.redhat.com/11/development/updates/integration-stack/discovery/earlyaccess/
+jboss.discovery.site.integration-stack-sap.url|devstudio|11=https://devstudio.redhat.com/11/development/updates/integration-stack/extras/
+
+
+# Properties must use the following format : key|context|version=value
+# key = regular java property key
+# context = either jbosstools or devstudio
+# version = Major.Minor.Micro.Qualifier (without the timestamp)
+# or
+# version = Major.Minor.Micro
+# or
+# version = Major.Minor
+# or
+# version = Major
+#
+# version can be optional for a given context.
+# context can be optional (but version can't be set)
+
+#################################################################
+
+# JBOSS TOOLS
+# ===========
+
+##Discovery
+# =========
+
+### CI snapshot builds 4.4/10
+# 4.4.neon version of jbosstools-earlyaccess.properties should be edited here, so the discovery job can fetch it: http://download.jboss.org/jbosstools/neon/snapshots/updates/earlyaccess.properties/4.4.neon/jbosstools-earlyaccess.properties
+jboss.discovery.directory.url|jbosstools|4.4=http://download.jboss.org/jbosstools/neon/stable/updates/discovery.earlyaccess/4.4.4.Final/jbosstools-directory.xml
+jboss.discovery.site.url|jbosstools|4.4=http://download.jboss.org/jbosstools/neon/stable/updates/
+jboss.discovery.earlyaccess.site.url|jbosstools|4.4=http://download.jboss.org/jbosstools/neon/stable/updates/discovery.earlyaccess/
+jboss.discovery.earlyaccess.list.url|jbosstools|4.4=http://download.jboss.org/jbosstools/neon/stable/updates/discovery.earlyaccess/4.4.4.Final/jbosstools-earlyaccess.properties
+jboss.central.webpage.url|jbosstools|4.4=https://repository.jboss.org/nexus/service/local/artifact/maven/redirect?r=public-jboss&g=org.jboss.tools.central&a=jbosstools-central-webpage&v=2.0.0-SNAPSHOT&e=zip&mustEndWith=.zip
+jboss.discovery.site.integration-stack.url|jbosstools|4.4=http://download.jboss.org/jbosstools/neon/stable/updates/integration-stack/discovery/
+jboss.discovery.earlyaccess.site.integration-stack.url|jbosstools|4.4=http://download.jboss.org/jbosstools/neon/stable/updates/integration-stack/discovery/earlyaccess/
+jboss.discovery.site.integration-stack-sap.url|jbosstools|4.4=http://d
