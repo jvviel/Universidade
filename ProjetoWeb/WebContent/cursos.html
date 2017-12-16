@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="cursoModulo">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <script src="js/angular.min.js"></script>
+    <link rel="icon" href="Imagens/icone.png">
+
+    <title>Projeto Web Universidade</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/estilos.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="css/carousel.css" rel="stylesheet">
+    <script src="controller/cursos.js"></script>
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body ng-controller="cursosController">
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a id="identificadorProfessor" class="navbar-brand" href="index.html">Projeto Web Universidade</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cadastros<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="professores.html">Professores</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="alunos.html">Alunos</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+<br><br>
+<br><br>
+<div class="container">
+<div>
+
+  <!-- Nav tabs -->
+  <h2 align="center">Lista e Cadastros de Cursos</h2>
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#cadastro" aria-controls="cadastro" role="tab" data-toggle="tab">Cadastro de Cursos</a></li>
+    <li role="presentation"><a href="#lista" aria-controls="lista" role="tab" data-toggle="tab">Lista de Cursos</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane" id="lista">
+    <br>
+      <div class="col-xs-4">
+      <label for="pesquisa">Pesquisa:</label>
+    <input type="text" ng-model="pesquisaCurso" class="form-control" id="pesquisa" placeholder="Digite a pesquisa">
+    <br>
+    </div>
+  <table class="table table-bordered table-hover">
+  <th>Código</th>
+  <th>Descrição</th>
+  <th>Horário da Aula</th>
+  <th>Professor</th>
+  <tr ng-repeat="cursosTabela in cursos | filter:pesquisaCurso" ng-click="selecionaCurso(cursosTabela)">
+  <td>{{cursosTabela.codigo}}</td>
+  <td>{{cursosTabela.descricao}}</td>
+  <td>{{cursosTabela.horario}}</td>
+  <td>{{cursosTabela.professor.nome}}</td>
+  </tr>
+</table>
+    </div>
+
+
+    <div role="tabpanel" class="tab-pane active" id="cadastro">
+    <br>
+       <form>
+  <div class="col-xs-2">
+    <label for="codigo">Código:</label>
+    <input type="text" readonly ng-model="curso.codigo" class="form-control" id="codigo" placeholder="Código">
+  </div>
+  <div class="col-xs-5">
+    <label for="descricao">Descrição:</label>
+    <input type="text" required ng-model="curso.descricao" class="form-control" id="descricao" placeholder="Descriçao">
+  </div>
+  <div class="col-xs-3">
+    <label for="horarioaula">Horário da Aula:</label>
+    <input type="text" ng-model="curso.horario" class="form-control" id="horarioaula" placeholder="Horário da Aula">
+  </div>
+  <div class="col-xs-4">
+    <label for="professor">Professor:</label>
+    <select class="form-control" ng-model="curso.professor" ng-options="professor.nome for professor in professores track by professor.codigo">
+    </select>
+</form>
+<br>
+
+<button type="submit" ng-click="limparCampos()" class="btn btn-success">
+<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>Novo</button>
+  <button type="submit" ng-disabled="!curso.professor" ng-click="salvar()" class="btn btn-primary">
+  <span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span>Gravar</button>
+  <button type="submit" ng-click="excluir()" class="btn btn-danger">
+  <span class="glyphicon glyphicon-ban-circle" aria-hidden="true"></span>Excluir</button>
+   <br><br>
+    </div>
+</div>
+    </div>
+  </div>
+
+</div>
+    
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
